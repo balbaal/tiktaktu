@@ -1,0 +1,168 @@
+#logo {
+  text-align: center;
+  font-family: "Caveat Brush", cursive;
+  font-size: 83.5px;
+  color: #4285f4;
+  animation-delay: 200ms;
+}
+
+#starter {
+  width: 400px;
+  height: 450px;
+  padding: 15px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+#gameplay {
+  position: relative;
+  height: 100%;
+}
+
+#content {
+  height: 70%;
+  text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  animation-delay: 200ms;
+}
+
+#board {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#gameplayStatus {
+  animation-delay: 650ms;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #4285f4;
+  color: white;
+  text-align: center;
+}
+
+.statusName {
+  font-family: "Caveat Brush", cursive;
+  font-size: 24px;
+}
+
+.statusScore {
+  font-family: "Caveat Brush", cursive;
+  font-size: 40px;
+}
+
+#playerNameO.active,
+#playerNameX.active,
+#scorePlayerO.active,
+#scorePlayerX.active {
+  background-color: #2b4f8ae8;
+}
+
+.square {
+  float: left;
+  width: 33.333333333%;
+  height: 33.333333333%;
+  cursor: pointer;
+  border-width: 5px;
+  border-color: #4285f4;
+  will-change: border-color;
+  font-family: "Caveat Brush", cursive;
+  font-size: 55px;
+  border-style: solid;
+}
+
+/* hide scrollbar in browser chrome & safari */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* custom style button floating */
+#reset-button {
+  display: none;
+  animation-delay: 700ms;
+}
+
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  top: 40px;
+  right: 40px;
+  background-color: #4285f4;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.float:hover {
+  color: white;
+}
+
+#back-button {
+  display: none;
+  animation-delay: 500ms;
+}
+
+.float-back {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  top: 40px;
+  left: 40px;
+  background-color: #4285f4;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.float-back:hover {
+  color: white;
+}
+
+.my-float {
+  margin-top: 22px;
+}
+
+#undo-button {
+  display: none;
+  animation-delay: 600ms;
+}
+
+.float-undo {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  top: 40px;
+  right: 115px;
+  background-color: #4285f4;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.float-undo:hover {
+  color: white;
+}

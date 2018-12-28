@@ -1,0 +1,118 @@
+<html>
+  <head>
+    <title>TIC TAC TOE</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+
+    <!-- External Font -->
+    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Covered+By+Your+Grace" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/css/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Animation -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <!-- SETTING STARTER -->
+      <div id="starter">
+        <div class="animated bounceInDown" id="logo">TIC TAC TOE</div>
+        <div class="animated bounceInUp" id="settings">
+          <div class="md-form">
+            <i class="fa fa-gamepad prefix"></i>
+            <input type="number" id="boardSize" class="form-control" />
+            <label for="boardSize">Board Size</label>
+          </div>
+          <div class="md-form">
+            <i class="fa fa-circle-o prefix"></i>
+            <input type="text" id="playerO" class="form-control" />
+            <label for="playerO">Player Name</label>
+          </div>
+          <div class="md-form">
+            <i class="fa fa-times prefix"></i>
+            <input type="text" id="playerX" class="form-control" />
+            <label for="playerX">Player Name</label>
+          </div>
+          <button
+            id="startGame"
+            type="button"
+            class="btn btn-primary btn-block"
+          >
+            Play
+          </button>
+        </div>
+      </div>
+
+      <!-- BUTTON BACK -->
+      <a id="undo-button" href="#" class="float-undo animated bounceInDown">
+        <i class="fa fa-undo my-float"></i>
+      </a>
+
+      <!-- BUTTON UNDO -->
+      <a id="back-button" href="#" class="float-back animated bounceInDown">
+        <i class="fa fa-arrow-left my-float"></i>
+      </a>
+
+      <!-- BUTTON RESET -->
+      <a id="reset-button" href="#" class="float animated bounceInDown">
+        <i class="fa fa-refresh my-float"></i>
+      </a>
+
+      <!-- GAMEPLAY VIEW -->
+      <div style="display:none" id="gameplay">
+
+        <!-- BOARD TIC TAC TOE -->
+        <div id="content" class="animated bounceIn"></div>
+
+        <!-- GAMEPLAY STATUS -->
+        <div
+          style="display:none"
+          id="gameplayStatus"
+          class="animated slideInUp"
+        >
+          <div class="row">
+            <div class="col statusName" id="playerNameO"></div>
+            <div class="col statusName" id="playerDraw">Draw</div>
+            <div class="col statusName" id="playerNameX"></div>
+          </div>
+          <div class="row">
+            <div class="col statusScore" id="scorePlayerO">0</div>
+            <div class="col statusScore" id="scoreDraw">0</div>
+            <div class="col statusScore" id="scorePlayerX">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JQuery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    ></script>
+    <!-- MDB core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.6.0/js/mdb.min.js"
+    ></script>
+    <!-- Custom JavaScript -->
+    <script src="js/index.js"></script>
+  </body>
+</html>
